@@ -15,14 +15,9 @@ body {
    background-size: cover;
 }
 
-/* .triangle-down {
-   width: 10px;
-   border-bottom: 1px solid red !important;
-   border-left: 1px solid red !important;
-   transform: rotate(135deg);
-   display: inline-block;
-   height: 10px;
-} */
+img {
+   width: 100%;
+}
 
 .container-bayan {
    font-family: 'TkachenkoSketch4F-Bold';
@@ -31,24 +26,33 @@ body {
    margin: auto;
    width: 45%;
 }
+
+@media (max-width: 1141px) {
+   .container-bayan {
+      font-size: 75px;
+   }
+}
+
+@media (max-width: 990px) {
+   .container-bayan {
+      font-size: 45px;
+   }
+}
+
+@media (max-width: 550px) {
+   .container-bayan {
+      font-size: 30px;
+   }
+}
+
+@media (max-width: 460px) {
+   .container-bayan {
+      font-size: 20px;
+   }
+}
+
 .bayan-header {
    text-align: center;
-}
-.container__wrapper-bayan {
-}
-/* .bayan-list {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-} */
-.bayan-container__text {
-   /* font-size: 100px; */
-}
-.bayan-container__elem {
-}
-
-.accordion {
-
 }
 
 .accordion:hover {
@@ -70,19 +74,38 @@ body {
 
 .accordion-item__trigger {
    display: block;
-   /* border: 1px solid black; */
    text-align: center;
    cursor: pointer;
 }
 
+@media (max-width: 1624px) {
+   .accordion-item__trigger {
+      font-size: 75px;
+   }
+}
+
+@media (max-width: 1166px) {
+   .accordion-item__trigger {
+      font-size: 45px;
+   }
+}
+@media (max-width: 758px) {
+   .accordion-item__trigger {
+      font-size: 25px;
+   }
+}
+
+@media (max-width: 460px) {
+   .accordion-item__trigger {
+      font-size: 15px;
+   }
+}
 
 .bayan-img {
    display: none;
-   /* border: 1px solid black; */
    border-top: none;
 }
 
-/* .accordion-item__input:checked ~ .accordion-item__trigger {} */
 .accordion-item__input:checked ~ .accordion-item__trigger .bayan-img {
    display: block;
 }
